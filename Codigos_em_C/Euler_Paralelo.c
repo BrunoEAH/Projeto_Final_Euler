@@ -1,33 +1,36 @@
-#include<stdio.h>
 #include<stdlib.h>
+#include<stdio.h>
 #include<omp.h>
 
 float Fatorial(int x);
-void Calc(float *e);
+void Calc(float *e,int n);
 
 int main(){
-  
-  float e = 0;
-  int thread_count = 100;
-  
-#pragma omp parallel num_threads(thread_count)
-  Calc(&e);
-
-  printf("%.100f\n",e);
-
-  return 0;
+	float e_global= 0.0 ;
+        int thread_count =100;
+	int n = 1000000;
+#	pragma omp parallel num_threads(thread_count)	
+	Calc(&e_global,n);
+        
+	printf("%.30f\n",e_global);
+	return 0;
 }
 
-void Calc(float *e){
-  float resultado;
-  int my_rank = omp_get_thread_num();
-  int thread_count = omp_get_num_threads();
-  
-    for(int i=0; i<10000;i++)
-      resultado = 1/(Fatorial(i));
-    
-#pragma omp critical
-*e += resultado;
+
+void Calc(float *e,int n){
+	int my_rank = omp_get_thread_num();
+	int thread_count = omp_get_num_threads();
+	float resultado;
+	int local_n;
+
+	local_n = n/thread_count;
+
+        for(int i=0; i<local_n;i++){
+                resultado = resultado + 1/(Fatorial(i));
+        };
+
+#	pragma omp critical
+	*e = resultado;
 
 }
 
