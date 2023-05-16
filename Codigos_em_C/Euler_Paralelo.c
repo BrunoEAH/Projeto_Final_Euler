@@ -2,13 +2,13 @@
 #include<stdio.h>
 #include<omp.h>
 
-float Fatorial(int x);
-void Calc(float *e,int n);
+double Fatorial(int x);
+void Calc(double *e,int n);
 
 int main(){
-	float e_global= 0.0 ;
+	double e_global= 0.0 ;
         int thread_count =100;
-	int n = 1000000;
+	int n = 100000;
 #	pragma omp parallel num_threads(thread_count)	
 	Calc(&e_global,n);
         
@@ -17,10 +17,10 @@ int main(){
 }
 
 
-void Calc(float *e,int n){
+void Calc(double *e,int n){
 	int my_rank = omp_get_thread_num();
 	int thread_count = omp_get_num_threads();
-	float resultado;
+	double resultado;
 	int local_n;
 
 	local_n = n/thread_count;
@@ -34,8 +34,7 @@ void Calc(float *e,int n){
 
 }
 
-
-float Fatorial(int x){
+double Fatorial(int x){
         if(x == 0) return 1;
         else
                 return x*Fatorial(x-1);
