@@ -16,6 +16,7 @@ Cálculo do Speedup para dois processadores:
 <br>
 
 n = 2
+<br>
 T(1) = 51,346 segundos
 <br>
 T(n) = 0,629 segundos
