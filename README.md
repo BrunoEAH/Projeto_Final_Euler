@@ -32,10 +32,13 @@ Tarefa T101: diretiva pragma omp critical fazendo com que as threads se convirja
 <br>
   São necessários 2 processadores para se conseguir o tempo mínimo de execução.
 <br>
+
 4. Qual é o grau máximo de concorrência?
+
 <br>
   O grau máximo de concorrência é de 100 threads, visto que foram usadas 100 threads no programa.
 <br>
+
 5. Qual é o paralelismo médio?
 <br>
   O paralelismo médio é de 51,346/0,629 = 81,63116.
