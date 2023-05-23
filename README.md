@@ -24,20 +24,15 @@ Tarefa T101: diretiva pragma omp critical fazendo com que as threads se convirja
 <br>
 
 2. Qual é o limite inferior do tempo de execução paralela para cada decomposição?
-<br>
   O limite inferior do tempo de execução paralela é de 51,346 segundos, ou seja, o tempo de execução da versão serial. 
 
 
 3. Quantos processadores são necessários para se conseguir o tempo mínimo de execução?
-<br>
   São necessários 2 processadores para se conseguir o tempo mínimo de execução.
   
 4. Qual é o grau máximo de concorrência?
-
-<br>
   O grau máximo de concorrência é de 100 threads, visto que foram usadas 100 threads no programa.
   
 5. Qual é o paralelismo médio?
-<br>
   O paralelismo médio é de 51,346/0,629 = 81,63116.
 
