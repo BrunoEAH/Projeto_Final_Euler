@@ -13,12 +13,31 @@ Exercício 04 – Decomposição de tarefas
 <br>
 1. Quais são as tarefas no caminho crítico para cada grafo de dependência? Para responder a pergunta, apresente um DAG do seu projeto.
 <br>
+
+![image](https://github.com/BrunoEAH/Projeto_Final_Euler/assets/111454984/ea5f4ed6-8b49-45a8-9082-f48147b39c26)
+
+Tarefa T0: Declaração das variáveis de das threads.
+<br>
+Tarefa T1 à T100: 100 threads executando o cálculo
+<br>
+Tarefa T101: diretiva pragma omp critical fazendo com que as threads se convirjam e some os resultados obtidos na variável e, representando a constante de Euler.
+<br>
+
 2. Qual é o limite inferior do tempo de execução paralela para cada decomposição?
 <br>
+  O limite inferior do tempo de execução paralela é de 51,346 segundos, ou seja, o tempo de execução da versão serial. 
+<br>
+
 3. Quantos processadores são necessários para se conseguir o tempo mínimo de execução?
+<br>
+  São necessários 2 processadores para se conseguir o tempo mínimo de execução.
 <br>
 4. Qual é o grau máximo de concorrência?
 <br>
+  O grau máximo de concorrência é de 100 threads, visto que foram usadas 100 threads no programa.
+<br>
 5. Qual é o paralelismo médio?
-
+<br>
+  O paralelismo médio é de 51,346/0,629 = 81,63116.
+<br>
 
