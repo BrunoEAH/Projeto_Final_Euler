@@ -14,13 +14,8 @@ Exercício 04 – Decomposição de tarefas
 1. Quais são as tarefas no caminho crítico para cada grafo de dependência? Para responder a pergunta, apresente um DAG do seu projeto.
 <br>
 
-![image](https://github.com/BrunoEAH/Projeto_Final_Euler/assets/111454984/ea5f4ed6-8b49-45a8-9082-f48147b39c26)
+![DAG](https://github.com/BrunoEAH/Projeto_Final_Euler/assets/111454984/424b87fd-6705-42b2-b1fb-a3f6fd70da7e)
 
-Tarefa T0: Declaração das variáveis de das threads.
-<br>
-Tarefa T1 à T100: 100 threads executando o cálculo
-<br>
-Tarefa T101: diretiva pragma omp critical fazendo com que as threads se convirjam e some os resultados obtidos na variável e, representando a constante de Euler.
 <br>
 
 2. Qual é o limite inferior do tempo de execução paralela para cada decomposição?
