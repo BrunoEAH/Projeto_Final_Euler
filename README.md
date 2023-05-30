@@ -19,7 +19,7 @@ Exercício 04 – Decomposição de tarefas
 <br>
 
 2. Qual é o limite inferior do tempo de execução paralela para cada decomposição?
-  O limite inferior do tempo de execução paralela é de 51,346 segundos, ou seja, o tempo de execução da versão serial. 
+  O limite inferior do tempo de execução paralela é de 44,561 segundos, ou seja, o tempo de execução da versão serial. 
 
 
 3. Quantos processadores são necessários para se conseguir o tempo mínimo de execução?
@@ -29,5 +29,5 @@ Exercício 04 – Decomposição de tarefas
   O grau máximo de concorrência é de 100 threads, visto que foram usadas 100 threads no programa.
   
 5. Qual é o paralelismo médio?
-  O paralelismo médio é de 51,346/0,629 = 81,63116.
+  O paralelismo médio é de 44,561/0,663 => ≅ 67,211161.
 
