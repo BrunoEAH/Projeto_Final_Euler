@@ -1,13 +1,13 @@
 Execução do "Euler_Serial" no ambiente AWS:
 
-![image](https://github.com/BrunoEAH/Projeto_Final_Euler/assets/111454984/8c037d3f-2562-4644-b133-87b8e61eeff6)
+![image](https://github.com/BrunoEAH/Projeto_Final_Euler/assets/111454984/dfe5c174-ae59-4afc-bcd6-b08a9ef14ca9)
 
 
 <br>
 
 Execução do "Euler_Paralelo" no ambiente AWS:
 
-![image](https://github.com/BrunoEAH/Projeto_Final_Euler/assets/111454984/f6471005-6d82-4012-aa7a-b405ea1b43d7)
+![image](https://github.com/BrunoEAH/Projeto_Final_Euler/assets/111454984/74bf58ad-6410-4eaf-ba0b-ebc4a0f7fce7)
 
 <br>
 
@@ -17,9 +17,9 @@ Cálculo do Speedup para dois processadores:
 
 n = 2
 <br>
-T(1) = 51,346 segundos
+T(1) = 44,561 segundos
 <br>
-T(n) = 0,629 segundos
+T(n) = 0,663 segundos
 
-Speedup = T(1)/T(n) => Speedup = 51,346/0,629 => Speedup = 81,63116
+Speedup = T(1)/T(n) => Speedup = 44,561/0,663 => Speedup ≅ 67,211161
 
