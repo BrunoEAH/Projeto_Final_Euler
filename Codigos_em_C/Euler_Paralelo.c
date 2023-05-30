@@ -3,16 +3,16 @@
 #include<omp.h>
 
 double Fatorial(int x);
-void Calc(double *e,int n);
+void Calc( double *e,int n);
 
-int main(){
+int main(){	
 	double e_global= 0.0 ;
         int thread_count =100;
 	int n = 100000;
 #	pragma omp parallel num_threads(thread_count)	
 	Calc(&e_global,n);
         
-	printf("%.30f\n",e_global);
+	printf("%.15lf\n",e_global);
 	return 0;
 }
 

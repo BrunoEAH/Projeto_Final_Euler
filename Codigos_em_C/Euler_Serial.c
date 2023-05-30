@@ -16,7 +16,7 @@ void Calc(){
                 e = e + 1/(Fatorial(i));
         }
 
-        printf("%.30f\n",e);
+        printf("%.15f\n",e);
 
 }
 
